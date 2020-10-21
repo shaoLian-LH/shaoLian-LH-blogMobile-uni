@@ -1,19 +1,5 @@
 # shaolianmobile_uni
+APP端基础框架+基础页面
 
-## Project setup
-```
+## 安装项目依赖
 yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
