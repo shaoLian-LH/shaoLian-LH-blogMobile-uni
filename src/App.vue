@@ -25,6 +25,11 @@
 	.uni-page-head__title {
 		z-index: 1001 !important;
     }	
+
+    // 全局默认
+    body, html {
+        background-color: #ffffff;
+    }
     
     // 首页中文章列表页的样式
     .article-list-li-introduce {
