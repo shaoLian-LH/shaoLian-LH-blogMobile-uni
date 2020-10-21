@@ -1,16 +1,67 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [ 
 		{
-			"path": "pages/index/index",
+			"path": "pages/home/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/note/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/about/index",
+			"style": {
+				"navigationBarTitleText": ""
 			}
 		}
 	],
+	"condition": { 
+        "current": 0, 
+        "list": [{
+            "name": "home", 
+            "path": "pages/home/index"
+        },{
+			"name": "note",
+			"path": "pages/note/index"
+		},{
+			"name": "about",
+			"path": "pages/about/index"
+		}]
+    },
+	"tabBar": {
+		"backgroundColor": "#96632E",
+		"selectedColor": "#c8a188",
+		"color": "#b69281",
+		"list": [
+			{
+				"text": "首页",
+				"pagePath": "pages/home/index",
+				"iconPath": "static/home.svg",
+				"selectedIconPath": "static/home-active.svg"
+			},
+			{
+				"text": "笔记",
+				"pagePath": "pages/note/index",
+				"iconPath": "static/writing.svg",
+				"selectedIconPath": "static/writing-active.svg"
+			},
+			{
+				"text": "关于",
+				"pagePath": "pages/about/index",
+				"iconPath": "static/about.svg",
+				"selectedIconPath": "static/about-active.svg"
+			}
+		]
+	},
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarBackgroundColor": "#96632E",
+		"navigationBarTextStyle": "white",
+		"app-plus": {
+			"titleNView": false
+		}
 	}
 }
