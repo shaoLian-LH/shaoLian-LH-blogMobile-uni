@@ -89,7 +89,7 @@
 		position: relative;
 		align-items: center;
 		justify-content: center;
-		background-color: #FCFAF2;
+		background-color: $main-background-color;
 		height: 100%;
 		overflow: scroll;
 	}
@@ -105,8 +105,8 @@
 		margin-bottom: 10rpx;
 		text-align: center;
 		margin-right: 10rpx;
-		
 		animation: fadeIn ease-out 0.8s;
+
 		.author-img{
 			display: inline-block;
 			width: 140rpx;
@@ -125,7 +125,7 @@
 				font-weight: bolder;
 				font-family: Arial, Helvetica, sans-serif;
 				font-size: 16px;
-				color: #96632E;
+				color: black;
 				opacity: 0.8;
 				line-height: 20px;
 			}
@@ -135,7 +135,7 @@
 				font-family: Arial, Helvetica, sans-serif;
 				font-size: 14px;
 				text-align: left;
-				color: #96632E;
+				color: $sl-color-grey;
 				text-indent: 1rem;
 			}
 		}
@@ -174,11 +174,11 @@
 			}
 			.friend-link-icon {
 				display: inline-block;
-				margin: 5rpx 5rpx 10rpx 32rpx;
+				margin: 5rpx 10rpx 6rpx 32rpx;
 				width: 30rpx;
 				height: 30rpx;
 				vertical-align: middle;
-				color: #96632E;
+				color: $primary-color;
 			}
 		}
 
@@ -189,7 +189,7 @@
 			font-family: Arial, Helvetica, sans-serif;
 			font-size: 16px;
 			line-height: 32px;
-			color: #96632E;
+			color: $primary-color;
 		}
 
 		.friend-link{
@@ -200,12 +200,11 @@
 			margin: 0px 10%;
 			margin-bottom: 20rpx;
 			border-radius: 8px;
-			// color: rgba(107, 103, 97, 0.6);
 			transition: all ease-in-out 0.8s;
 			
 			&:hover, &:focus, &:visited {
 				font-size: 14px;
-				color:#996600;
+				color:$sl-color-grey;
 				opacity: 0.8;
 			}
 			.friend-img {
@@ -217,7 +216,7 @@
 				position: absolute;
 				left: 14rpx;
 				bottom: 20rpx;
-				color: #996600;
+				color: $sl-color-grey;
 				font-weight: bold;
 				font-size: 18px;
 				z-index: 999;

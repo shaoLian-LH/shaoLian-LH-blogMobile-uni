@@ -7,7 +7,7 @@
                     class = "close" 
                     type = "close"
                     @click = "closeModal"
-                    size = "15" 
+                    size = "20" 
                     color = "white"
                 />
             </view>
@@ -88,7 +88,7 @@
         left: 0;
         height: 100vh;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(0, 0, 0, 0.12);
 
         .search-model-wrap {
             position: relative;
@@ -97,29 +97,37 @@
             left: 2.5%;
             top: 220rpx;
             animation: jumpOut ease-out 0.4s;
+            border-radius: 6rpx;
+            background-color: rgba($color: $primary-color, $alpha: 0.95);
         }
 
         .search-model-title {
             position: relative;
-            background-color: $primary-color;
-            color: #f2f2f2;
-            border-top-left-radius: 10rpx;
-            border-top-right-radius: 10rpx;
+            display: flex;
+            justify-content: space-between;
+            background-color: transparent;
             font-size: 14px;
             font-weight: normal;
-            padding: 10rpx 30rpx;
+            padding: 0rpx 30rpx;
 
+            uni-text {
+                position: relative;
+                display: inline-block;
+                padding-top: 10rpx;
+                box-sizing: border-box;
+                color: #fff;
+            }
             .close {
                 position: absolute;
-                right: 30rpx;
-                top: 12rpx;
+                right: 15rpx;
+                top: 0rpx;
             }
         }
     }
 
     .search-model-body{
         position: relative;
-        background-color: $primary-color;
+        background-color: transparent;
         padding: 20rpx 0px;
 
         .drop-down-main-menu {
@@ -139,8 +147,8 @@
                 border: none;
                 padding: 0;
                 font-size: 14px;
-                background-color: $secondary-color;
-                color: #f2f2f2;
+                background-color: #fff;
+                color: $primary-color;
             }
             .drop-down-menu {
                 list-style: none;
@@ -161,13 +169,13 @@
                     width: 100%;
                     display: inline-block;
                     font-size: 12px;
-                    background-color: $secondary-color;
-                    color: #f2f2f2;
+                    background-color:  #fff;
+                    color: $primary-color;
                     margin: 0;
                     padding: 8rpx 0rpx;
 
                     &:hover{
-                        background-color: $primary-color;
+                        background-color: $secondary-color;
                     }
                     &:not(:last-child) {
                         border-bottom: solid 1px $primary-color;
@@ -177,9 +185,10 @@
         }
         .search-model-input {
             display: inline-block;
-            width: calc(100% - 160rpx);
+            width: calc(100% - 144rpx);
             border-radius: 10rpx;
             text-indent: 0.5rem;
+            background-color: #fff;
         }
     }
 
@@ -187,7 +196,7 @@
         position: relative;
         width: 100%;
         display: block;
-        background-color: $primary-color;
+        background-color: transparent;
         justify-content: center;
         align-items: center;
         text-align: right;
@@ -195,23 +204,22 @@
         button {
             position: relative;
             display: inline-block;
-            width: 120rpx;
+            width: 100rpx;
             font-size: 12px;
             height: 42rpx;
             line-height: 42rpx;
             font-weight: normal;
             border: none;
-            margin-right: 20rpx;
-            color: $secondary-color;
+            margin-right: 30rpx;
         }
 
         .ok-btn {
-            background-color: $secondary-color;
-            color: #f2f2f2;
+            background-color: #fff;
+            color: $primary-color;
         }
 
         .cancel-btn {
-            background-color: #f2f2f2;
+            background-color: #fff;
             color: black;
         }
     }

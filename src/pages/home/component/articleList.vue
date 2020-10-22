@@ -99,9 +99,14 @@
         width: 95%;
         left: 2.5%;
         border: 1px solid #f2f2f2;
-        box-shadow: 0px 2px 5px grey;
+        box-shadow: $commone-shadow;
         text-align: left;
         background-color: #ffffff;
+        transition: $short-transition;
+
+        &:hover {
+            box-shadow: $hover-shadow;
+        }
         
         &:first-child {
             margin-top: 22rpx;

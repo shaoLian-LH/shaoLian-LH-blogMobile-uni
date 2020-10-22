@@ -33,9 +33,9 @@
 		}]
     },
 	"tabBar": {
-		"backgroundColor": "#96632E",
-		"selectedColor": "#c8a188",
-		"color": "#b69281",
+		"backgroundColor": "#ffffff",
+		"selectedColor": "#3395DC",
+		"color": "#6C747A",
 		"list": [
 			{
 				"text": "首页",
