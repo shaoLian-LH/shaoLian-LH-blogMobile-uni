@@ -15,8 +15,7 @@
 		<view v-if = "listmode" class = "list-mode">
 			<artcleList :articles = "articles" />
 			<uni-icons 
-				:hidden = "wannerSearch"
-				v-if = "!customSearch"
+				v-if = "!wannerSearch"
 				class = "sl-icon search-icon" 
 				type = "search"
 				@click = "wannerSearchFunction" 
@@ -24,7 +23,6 @@
 				color = "white" 
 			/>
 			<uni-icons 
-				:hidden = "wannerSearch"
 				v-if = "customSearch"
 				class = "sl-icon search-icon" 
 				type = "undo-filled"
@@ -33,7 +31,7 @@
 				color = "white" 
 			/>
 			<searchModal 
-				:hidden = "!wannerSearch" 
+				v-if = "wannerSearch"
 				:tags = "tags" 
 				:choicedTag = "choicedTag"
 			/>
@@ -41,7 +39,7 @@
 		<view v-show = "!listmode" class = "article-mode">
 			<articleInfo :detail = "detail" />
 			<uni-icons 
-				:hidden = "wannerSearch"
+				v-if="!wannerSearch"
 				class = "sl-icon search-icon" 
 				type = "undo-filled"
 				@click = "changeToCustomSearch(false, '')" 
@@ -159,6 +157,7 @@
 			"searchModal": searchModal,
 			"articleInfo": articleInfo
 		},
+		
 		methods: {
 			async getArticles (){
 				if(!this.isGetting && !this.isLastPage) {

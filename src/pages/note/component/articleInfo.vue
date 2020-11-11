@@ -14,10 +14,6 @@
 </template>
 
 <script>
-    import Empty from '../../../component/empty.vue';
-    import timeIcon from '../../../static/time.png';
-    import watchIcon from '../../../static/Watch.png';
-
     export default {
         props: ["detail"],
         data() {

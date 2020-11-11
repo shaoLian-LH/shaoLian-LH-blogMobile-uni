@@ -22,9 +22,10 @@
 <style lang="scss">
   .empty-div{
     position: relative;
-    width: calc(100% - 4px);
-    padding-top: 20%;
-    height: 200px;
+    width: calc(100% - 40rpx);
+    padding-top: 5%;
+	left: 15rpx;
+    height: 200rpx;
     border: dashed 2px $primary-color;
     text-align: center;
     background-color: #ECE3D9;

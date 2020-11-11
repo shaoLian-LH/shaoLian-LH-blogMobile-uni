@@ -40,20 +40,20 @@
 			{
 				"text": "首页",
 				"pagePath": "pages/home/index",
-				"iconPath": "static/home.svg",
-				"selectedIconPath": "static/home-active.svg"
+				"iconPath": "/static/home.png",
+				"selectedIconPath": "/static/home-active.png"
 			},
 			{
 				"text": "笔记",
 				"pagePath": "pages/note/index",
-				"iconPath": "static/writing.svg",
-				"selectedIconPath": "static/writing-active.svg"
+				"iconPath": "/static/writing.png",
+				"selectedIconPath": "/static/writing-active.png"
 			},
 			{
 				"text": "关于",
 				"pagePath": "pages/about/index",
-				"iconPath": "static/about.svg",
-				"selectedIconPath": "static/about-active.svg"
+				"iconPath": "/static/about.png",
+				"selectedIconPath": "/static/about-active.png"
 			}
 		]
 	},

@@ -14,10 +14,11 @@
         <div class="note-icon-view">
           <text class="note-tag">{{ item.tagName }}</text>
           <p class="note-icon-text">
-            <img :src="timeIcon" alt="time" /> {{ item.addTime }}
+            <image :src="timeIcon" alt="time" /> {{ item.addTime }}
           </p>
           <p class="note-icon-text">
-            <img :src="watchIcon" alt="view" /> {{ item.fire }}
+            <image class="note-icon-watch" :src="watchIcon" alt="view" />
+            {{ item.fire }}
           </p>
         </div>
         <view class="note-introduce-view">
@@ -26,16 +27,16 @@
       </view>
     </view>
     <empty
-      :hidden="articleList.length !== 0"
+      v-if="articleList.length === 0"
       emptyTitle="作者懒到没有写过类似文章"
     />
   </view>
 </template>
 
 <script>
-import Empty from "../../../component/empty.vue";
-import timeIcon from "../../../static/time.png";
-import watchIcon from "../../../static/Watch.png";
+import Empty from "@/component/empty.vue";
+import watchIcon from "@/static/Watch.png";
+import timeIcon from "@/static/time.png";
 
 export default {
   props: ["articles"],
@@ -66,8 +67,8 @@ export default {
   data() {
     return {
       articleList: [],
-      timeIcon: timeIcon,
       watchIcon: watchIcon,
+      timeIcon: timeIcon,
     };
   },
   methods: {
@@ -109,10 +110,11 @@ export default {
     border-radius: 20rpx;
     transition: $short-transition;
 
-    &:hover, &:active {
-        box-shadow: $hover-shadow;
+    &:hover,
+    &:active {
+      box-shadow: $hover-shadow;
     }
-    
+
     .note-title-view {
       position: relative;
       vertical-align: top;
@@ -170,11 +172,15 @@ export default {
         font-weight: normal;
         margin-right: 18rpx;
 
-        img {
-          width: auto;
-          height: 26rpx;
-          margin-right: 12rpx;
-          vertical-align: top;
+        uni-image {
+          width: 30rpx;
+          height: 30rpx;
+          vertical-align: middle;
+          margin-right: 20rpx;
+        }
+
+        .note-icon-watch {
+          width: 38rpx;
         }
       }
     }

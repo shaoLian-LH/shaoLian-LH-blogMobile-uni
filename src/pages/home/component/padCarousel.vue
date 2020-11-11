@@ -47,7 +47,7 @@
             padding: 14rpx 20rpx;
             margin-top: 20rpx;
             overflow: hidden;
-            height: 320rpx;
+            height: 340rpx;
         }
     }
     .carousel-banner-div {
@@ -58,7 +58,7 @@
         img {
             position: relative;
             width: 100%;
-            height: 320rpx;
+            height: 340rpx;
         }
 
         .carousel-banner-p{

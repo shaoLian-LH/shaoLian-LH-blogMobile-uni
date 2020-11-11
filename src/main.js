@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import App from './App';
-import 'highlight.js/styles/monokai-sublime.css';
 import CONSTURL from './config/CONSTURL';
 import myRequest from './util/request';
 import marked from './util/marked';

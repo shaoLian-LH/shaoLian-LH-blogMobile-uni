@@ -47,7 +47,7 @@
 </template>
 
 <script>
-    import icons from '../../../component/uni-icons/uni-icons.vue';
+    import icons from '@/component/uni-icons/uni-icons.vue';
     export default {
         data(){
             return {

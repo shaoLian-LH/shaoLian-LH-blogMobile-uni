@@ -25,10 +25,20 @@
 	.uni-page-head__title {
 		z-index: 1001 !important;
     }	
-
+    .uni-tabbar__icon {
+        img {
+            width: 48rpx;
+            height: 48rpx;
+        }
+    }
     // 全局默认
     body, html {
         background-color: #ffffff;
+    }
+
+    body {
+        padding-top: 32rpx;
+        box-sizing: border-box;
     }
     
     // 首页中文章列表页的样式
