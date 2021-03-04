@@ -16,7 +16,7 @@
                 >
                     <img 
                         class = "carousel-banner-img" 
-                        :src = "'https://yuudachi.cn:444/static/images/article/'+banner.imgName" 
+                        :src = "'http://shaolianblog.oss-cn-hangzhou.aliyuncs.com/blog/article/'+banner.imgName" 
                         alt = "?"
                     />
                     <p class = "carousel-banner-p">{{banner.title}}</p>                                

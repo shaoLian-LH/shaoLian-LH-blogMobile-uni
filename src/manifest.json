@@ -113,6 +113,8 @@
             "treeShaking" : {
                 "enable" : true
             }
-        }
+        },
+        "title" : "邵莲的博客",
+        "domain" : "shaolianblog.top"
     }
 }

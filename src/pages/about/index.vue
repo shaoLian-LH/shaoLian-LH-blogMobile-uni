@@ -3,7 +3,7 @@
 		<view class = "author-intro-div">
 			<image 
 				class = "author-img" 
-				src = "https://yuudachi.cn:444/static/images/article/8f072d3ff68f48b8b270930d6908a421.jpg" 
+				src = "http://shaolianblog.oss-cn-hangzhou.aliyuncs.com/blog/article/8f072d3ff68f48b8b270930d6908a421.jpg" 
 				alt = "?"
 			/>
 			<view class = "sub-div">
@@ -41,7 +41,7 @@
 							<img
 								:key = "item2.id+index"
 								class = "friend-img" 
-								:src = "'https://yuudachi.cn:444/static/images/article/'+item2.imgName" 
+								:src = "'http://shaolianblog.oss-cn-hangzhou.aliyuncs.com/blog/article/'+item2.imgName" 
 								:alt = "item2.imgName" 
 							/>
 							<p 
